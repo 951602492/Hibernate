@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hi/HibernateHiger.iml" filepath="$PROJECT_DIR$/Hi/HibernateHiger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/House/House.iml" filepath="$PROJECT_DIR$/House/House.iml" />
+    </modules>
+  </component>
+</project>

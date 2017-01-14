@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- 数据库连接 -->
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+        <property name="connection.username">ckworcl</property>
+        <property name="connection.password">1234</property>
+
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+
+        <property name="current_session_context_class">thread</property>
+
+        <!--关联小配置-->
+        <mapping resource="cn/happy/house/users.hbm.xml"/>
+        <mapping resource="cn/happy/house/house.hbm.xml"/>
+
+    </session-factory>
+
+</hibernate-configuration>

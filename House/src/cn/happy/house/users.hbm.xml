@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.happy.house">
+    <class name="cn.happy.house.Users" table="USERS" >
+        <id name="id" column="id"> <generator class="native"></generator></id>
+        <property name="name" type="string"></property>
+        <property name="password" type="string"></property>
+        <property name="telephone" type="string"></property>
+        <property name="username" type="string"></property>
+        <property name="isadmin"></property>
+    </class>
+</hibernate-mapping>
